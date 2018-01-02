@@ -90,6 +90,15 @@ or passing your own compiler flags via the `OPTIM_FLAGS` make variable:
 $ make OPTIM_FLAGS="-O0 -g"
 ```
 
+You many need to set the path for libboost:
+
+```
+# Where libboost headers are located
+LIBBOOST_DEV=/usr/lib/x86_64-linux-gnu
+$ ./configure --with-boost-libdir=$LIBBOOST_DEV
+```
+
+
 ## Ubuntu/Debian specific info
 
 On Ubuntu/Debian/Mint and similar the following sequence should work
